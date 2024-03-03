@@ -1,0 +1,59 @@
+.input {
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1900px) {
+    .container {
+        max-width: 1640px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1240px) {
+    .container {
+        padding-inline: 20px;
+    }
+}
+
+.inputdiv {
+    padding: 5px;
+    margin-bottom: 10px;
+    display: table;
+    width: 100%;
+    position: relative;
+    background: #f4f5f7;
+    z-index: 99 !important;
+    border-radius: 5px;
+}
+
+.textarea {
+    width: 98%;
+    border: 1px solid black;
+    height: 100px;
+    padding: 0.6rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+    display: block;
+    font-size: 22px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    color: #de0707;
+    font-size: 20px;
+    padding: 5px 15px;
+    line-height: 1.5;
+    background: 0 0;
+    border: none;
+    z-index: 999;
+    cursor: pointer;
+    top: 10px;
+    outline: 0;
+}
