@@ -16,12 +16,33 @@
 }
 
 h2 {
-    margin-left: 6px;
+    /* margin-left: 6px; */
     margin-top: 25px;
-    margin-bottom: 5px;
-    font-weight: 300;
-    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
     width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 1920px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width:768px) {
+    .grid {
+        display: block;
+    }    
+    .cards {
+        margin: 1% !important;
+    }
 }
 
 .cards {
@@ -31,17 +52,27 @@ h2 {
     position: relative;
     text-align: center;
     margin: .5%;
-    border-radius: 0 10px;
-    background-color: #f4f5f7;
+    border-radius: 10px;
+    /* background-color: #f4f5f7; */
+    background-color: #FFFDD0;
     box-shadow: 0 4px 6px -1px rgb(0 0 0/10%), 0 2px 4px -1px rgb(0 0 0/6%);
     float: left;
+}
+
+.cards:hover {
+    background-color: #DAF7A6;
+}
+
+.cards:hover span {
+    color: #000;
 }
 
 span {
     position: absolute;
     left: 15px;
-    bottom: 3px;
-    color: #000;
+    bottom: 20px;
+    /* color: #000; */
+    color: #00000085;
     font-weight: 600;
     z-index: 9;
     font-size: 12px;
@@ -52,6 +83,26 @@ span {
 p {
     margin: 0;
     font-size: 20px;
-    padding: 7px 0 22px;
+    padding: 15px 0;
     color: #000;
+}
+
+@media (max-width: 425px) {
+    span {
+        font-size: 10px !important;
+    }
+
+    p {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    span {
+        font-size: 8px !important;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
 }

@@ -19,6 +19,12 @@ const FontJson = {
             fontFamily: 'fantasy',
             postfix: ' ★🍒 ',
         },
+        {
+            fontName: 'Cherry',
+            prefix: '',
+            fontFamily: 'tahoma',
+            postfix: ' ★🍒 ',
+        },
     ]
 }
 

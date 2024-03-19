@@ -19,12 +19,12 @@
 }
 
 .inputdiv {
-    padding: 5px;
-    margin-bottom: 10px;
+    padding: 10px;
+    /* margin-bottom: 10px; */
     display: table;
     width: 100%;
     position: relative;
-    background: #f4f5f7;
+    /* background: #f4f5f7; */
     z-index: 99 !important;
     border-radius: 5px;
 }
@@ -45,7 +45,7 @@
 
 .close {
     position: absolute;
-    right: 10px;
+    right: 20px;
     color: #de0707;
     font-size: 20px;
     padding: 5px 15px;

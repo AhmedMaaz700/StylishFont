@@ -8,7 +8,7 @@ const Input = ({func, input}) => {
             <div className='inputdiv'>
                 <textarea 
                     className='textarea' 
-                    placeholder='✏️ Type text here...' 
+                    placeholder='Type text here...' 
                     value={input}
                     onChange={(e)=>func(e.target.value)}
                 />
